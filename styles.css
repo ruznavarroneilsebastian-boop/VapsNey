@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 2px solid #00ffcc;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(90deg, #00ffcc, #6a00ff);
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* PRODUCTOS */
+.productos {
+    padding: 40px;
+    text-align: center;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card {
+    background: #1a1a1a;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 220px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+/* BOTON WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 0 10px #25D366;
+}
+.galeria {
+    display: flex;
+    gap: 5px;
+}
+
+.galeria img {
+    width: 48%;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}

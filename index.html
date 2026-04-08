@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VapsNey 🔥</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <h1>VapsNey 🔥🍬</h1>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Los mejores vapos del mercado</h2>
+    <p>Calidad premium • Sabores únicos • Entrega rápida</p>
+</section>
+
+<!-- PRODUCTOS -->
+<section class="productos">
+    <h2>🔥 Nuestros Productos</h2>
+
+    <div class="contenedor">
+
+        <div class="card">
+<div class="galeria">
+    <img src="img/delta8-1.jpg.jpg">
+    <img src="img/delta8-2.jpg.jpg">
+</div>
+    <h3>Vapo Delta 8</h3>
+    <p>$50.000</p>
+<p>🔥 Sabor intenso • Alta duración</p>
+    <button onclick="comprar('Vapo Delta 8')">Comprar</button>
+
+</div>
+
+        <div class="card">
+
+    <div class="galeria">
+        <img src="img/delta10-1.jpg.jpg">
+        <img src="img/delta10-2.jpg.jpg">
+    </div>
+
+    <h3>Vapo Delta 10</h3>
+    <p>$50.000</p>
+<p>🔥 Sabor intenso • Alta duración</p>
+    <button onclick="comprar('Vapo Delta 10')">Comprar</button>
+
+</div>
+
+    </div>
+</section>
+
+<!-- BOTON WHATSAPP -->
+<a href="https://wa.me/573017565158" class="whatsapp" target="_blank">
+    💬
+</a>
+
+<script>
+function comprar(producto) {
+    const numero = "573001234567";
+    const mensaje = "Hola, quiero comprar: " + producto;
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`);
+}
+</script>
+
+</body>
+</html>
