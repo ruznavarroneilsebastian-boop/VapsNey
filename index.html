@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>VapsNey 🔥</title>
+    <title>VapsNey 🔥🍬</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,65 +10,69 @@
 <!-- NAVBAR -->
 <header class="navbar">
     <h1>VapsNey 🔥🍬</h1>
-<p>Los mejores vapos premium 💨</p>
+    <p class="subtitulo">Vapos premium • Calidad garantizada 💨</p>
 </header>
 
 <!-- HERO -->
 <section class="hero">
     <h2>Los mejores vapos del mercado</h2>
-    <p>Calidad premium • Sabores únicos • Entrega rápida</p>
+    <p>Sabores únicos • Alta duración • Entrega rápida</p>
 </section>
 
-<!-- PRODUCTOS -->
+<!-- SECCIÓN EQUATOR -->
 <section class="productos">
-    <h2>💨Vapos Equator</h2>
+    <h2>💨 Vapos Equator</h2>
+
+    <div class="contenedor">
+        <div class="card">
+            <div class="galeria">
+                <img src="img/vapo1.jpg">
+            </div>
+            <h3>Vapo Equator 30K Puff</h3>
+            <p class="precio">$35.000</p>
+            <button onclick="comprar('Vapo Equator 30K Puff')">
+                Comprar por WhatsApp
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- SECCIÓN PRINCIPAL -->
+<section class="productos">
+    <h2>🔥 Productos Destacados</h2>
 
     <div class="contenedor">
 
         <div class="card">
             <div class="galeria">
-                <img src="img/vapo1.jpg">
+                <img src="img/delta8-1.jpg">
+                <img src="img/delta8-2.jpg">
             </div>
-            <h3>Vapo</h3>
-            <p>$35.000</p>
-            <button onclick="comprar('Vapo equator 30k puff')">Comprar</button>
+            <h3>Vapo Delta 8</h3>
+            <p class="precio">$50.000</p>
+            <p class="detalle">🔥 Sabor intenso • Alta duración</p>
+            <button onclick="comprar('Delta 8')">
+                Comprar por WhatsApp
+            </button>
         </div>
-    </div>
-</section>
-    <h2>🔥 Nuestros Productos</h2>
-
-    <div class="contenedor">
 
         <div class="card">
-<div class="galeria">
-    <img src="img/delta8-1.jpg">
-    <img src="img/delta8-2.jpg">
-</div>
-    <h3>Vapo Delta 8</h3>
-    <p>$50.000</p>
-<p>🔥 Sabor intenso • Alta duración</p>
-    <button onclick="comprar('Destilado Delta 8')">Comprar</button>
-
-</div>
-
-        <div class="card">
-
-    <div class="galeria">
-        <img src="img/delta10-1.jpg">
-        <img src="img/delta10-2.jpg">
-    </div>
-
-    <h3>Vapo Delta 10</h3>
-    <p>$50.000</p>
-<p>🔥 Sabor intenso • Alta duración</p>
-    <button onclick="comprar('Destilado Delta 10')">Comprar</button>
-
-</div>
+            <div class="galeria">
+                <img src="img/delta10-1.jpg">
+                <img src="img/delta10-2.jpg">
+            </div>
+            <h3>Vapo Delta 10</h3>
+            <p class="precio">$50.000</p>
+            <p class="detalle">🔥 Sabor intenso • Alta duración</p>
+            <button onclick="comprar('Delta 10')">
+                Comprar por WhatsApp
+            </button>
+        </div>
 
     </div>
 </section>
 
-<!-- BOTON WHATSAPP -->
+<!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/573017565158" class="whatsapp" target="_blank">
     💬
 </a>
@@ -76,7 +80,7 @@
 <script>
 function comprar(producto) {
     const numero = "573017565158";
-    const mensaje = "Hola, quiero comprar: " + producto;
+    const mensaje = "Hola, estoy interesado en el " + producto + ", ¿tienes disponibilidad?";
     window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`);
 }
 </script>
